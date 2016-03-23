@@ -16,7 +16,7 @@
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "*",
 		"mihaildev/yii2-elfinder": "*",
-		"newerton/yii2-fancybox": "*"
+		"newerton/yii2-fancybox": "dev-master"
     },
 	"autoload": {
         "psr-4": {
