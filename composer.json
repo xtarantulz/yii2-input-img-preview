@@ -1,23 +1,21 @@
 {
-    "name": "kartik-v/yii2-krajee-base",
-    "description": "Base library and foundation components for all Yii2 Krajee extensions.",
-    "keywords": ["yii2", "extension", "widget", "krajee", "base", "foundation"],
-    "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+    "name": "xtarantulz/yii2-input-img-preview",
+    "description": "Розширение для yii2-elfinder и yii2-fancybox, чтобы отображать превью выбраных файлов",
     "type": "yii2-extension",
+	"homepage": "https://github.com/xtarantulz/yii2-input-img-preview",
+    "keywords": ["yii2", "extension", "fancyapps", "fancybox", ""],
     "license": "BSD-3-Clause",
+	"minimum-stability":"stable",
     "authors": [
         {
-            "name": "Kartik Visweswaran",
-            "email": "kartikv2@gmail.com",
-            "homepage": "http://www.krajee.com/"
+            "name": "Batrakov Vladimir",
+            "email": "xtarantulz@mail.ru",
+			"homepage": "https://github.com/xtarantulz",
+            "role": "Developer"
         }
     ],
     "require": {
-        "yiisoft/yii2-bootstrap": "@dev"
+		"yiisoft/yii2": "*",
     },
-    "autoload": {
-        "psr-4": {
-            "kartik\\base\\": ""
-        }
-    }
+
 }
