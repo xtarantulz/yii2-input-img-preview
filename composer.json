@@ -19,7 +19,6 @@
         "imagine/imagine": "v0.5.0"
     },
 
-    // указание автозагрузчика классов
     "autoload": {
         "psr-4": {
             "yii\\imagine\\": ""
