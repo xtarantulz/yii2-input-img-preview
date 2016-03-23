@@ -5,8 +5,7 @@
 	"homepage": "https://github.com/xtarantulz/yii2-input-img-preview",
     "keywords": ["yii2", "extension", "fancyapps", "fancybox", ""],
     "license": "BSD-3-Clause",
-	"minimum-stability":"stable",
-    "authors": [
+	"authors": [
         {
             "name": "Batrakov Vladimir",
             "email": "xtarantulz@mail.ru",
@@ -14,13 +13,16 @@
             "role": "Developer"
         }
     ],
+ 		
     "require": {
-		//"php": ">=5.4.0",
-		//"yiisoft/yii2": "*",
-		//"mihaildev/yii2-elfinder": "*",
-		//"newerton/yii2-fancybox": "dev-master"
+        "yiisoft/yii2": "*",
+        "imagine/imagine": "v0.5.0"
     },
-    /*"autoload": {
-        "psr-4": {"xtarantulz\\yii2-input-img-preview\\": ""}
-    },*/
+
+    // указание автозагрузчика классов
+    "autoload": {
+        "psr-4": {
+            "yii\\imagine\\": ""
+        }
+    }
 }
