@@ -15,12 +15,12 @@
         }
     ],
     "require": {
-		"php": ">=5.4.0",
-		"yiisoft/yii2": "*",
-		"mihaildev/yii2-elfinder": "*",
-		"newerton/yii2-fancybox": "dev-master"
+		//"php": ">=5.4.0",
+		//"yiisoft/yii2": "*",
+		//"mihaildev/yii2-elfinder": "*",
+		//"newerton/yii2-fancybox": "dev-master"
     },
-    "autoload": {
+    /*"autoload": {
         "psr-4": {"xtarantulz\\yii2-input-img-preview\\": ""}
-    },
+    },*/
 }
