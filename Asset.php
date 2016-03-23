@@ -1,5 +1,5 @@
 <?php
-namespace xtarantulz\yii2-input-img-preview;
+namespace xtarantulz\input-img-preview;
 
 class Asset extends AssetBundle
 {
