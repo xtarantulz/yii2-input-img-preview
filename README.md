@@ -2,19 +2,19 @@ yii2-input-img-preview
 
 Yii2 ElFinder input img preview
 
-Модуль являеться разширением ElFinder Input. При использовании текстового поля для добавлении картинок выводиться превью.
+РњРѕРґСѓР»СЊ СЏРІР»СЏРµС‚СЊСЃСЏ СЂР°Р·С€РёСЂРµРЅРёРµРј ElFinder Input. РџСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё С‚РµРєСЃС‚РѕРІРѕРіРѕ РїРѕР»СЏ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёРё РєР°СЂС‚РёРЅРѕРє РІС‹РІРѕРґРёС‚СЊСЃСЏ РїСЂРµРІСЊСЋ.
 
-Использование:
+РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ:
 use mihaildev\elfinder\InputFile;
 use mihaildev\elfinder\ElFinder;
 use xtarantulz\input-img-preview\InputImgPreview
 
 echo $form->field($model, 'images')->widget(InputFile::className(), [
     'language'      => 'ru',
-    'controller'    => 'elfinder', // вставляем название контроллера, по умолчанию равен elfinder
-    'filter'        => 'image',    // фильтр файлов, можно задать массив фильтров https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#wiki-onlyMimes
+    'controller'    => 'elfinder', // РІСЃС‚Р°РІР»СЏРµРј РЅР°Р·РІР°РЅРёРµ РєРѕРЅС‚СЂРѕР»Р»РµСЂР°, РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЂР°РІРµРЅ elfinder
+    'filter'        => 'image',    // С„РёР»СЊС‚СЂ С„Р°Р№Р»РѕРІ, РјРѕР¶РЅРѕ Р·Р°РґР°С‚СЊ РјР°СЃСЃРёРІ С„РёР»СЊС‚СЂРѕРІ https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#wiki-onlyMimes
     'template'      => '<div class="input-group">{input}<span class="input-group-btn">{button}</span></div>',
     'options'       => ['class' => 'form-control'],
     'buttonOptions' => ['class' => 'btn btn-success'],
-    'multiple'      => true       // возможность выбора нескольких файлов
+    'multiple'      => true       // РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РІС‹Р±РѕСЂР° РЅРµСЃРєРѕР»СЊРєРёС… С„Р°Р№Р»РѕРІ
 ]);
