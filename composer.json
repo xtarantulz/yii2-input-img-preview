@@ -20,7 +20,9 @@
 		"mihaildev/yii2-elfinder": "*",
 		"newerton/yii2-fancybox": "dev-master"
     },
-    "autoload": {
-        "psr-4": {"xtarantulz\\preview\\": ""}
-    },
+	"autoload": {
+        "psr-4": {
+            "xtarantulz\\preview\\": ""
+        }
+    }
 }
