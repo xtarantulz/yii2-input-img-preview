@@ -1,0 +1,26 @@
+{
+    "name": "xtarantulz/yii2-input-img-preview",
+    "description": "Розширение для yii2-elfinder и yii2-fancybox, чтобы отображать превью выбраных файлов",
+    "type": "yii2-extension",
+	"homepage": "https://github.com/xtarantulz/yii2-input-img-preview",
+    "keywords": ["yii2", "extension", "fancyapps", "fancybox", ""],
+    "license": "BSD-3-Clause",
+	"minimum-stability":"stable",
+    "authors": [
+        {
+            "name": "Batrakov Vladimir",
+            "email": "xtarantulz@mail.ru",
+			"homepage": "https://github.com/xtarantulz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+		"php": ">=5.4.0",
+		"yiisoft/yii2": "*",
+		"mihaildev/yii2-elfinder": "*",
+		"newerton/yii2-fancybox": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"xtarantulz\\yii2-input-img-preview\\": ""}
+    },
+}
