@@ -21,6 +21,6 @@
 		"newerton/yii2-fancybox": "dev-master"
     },
     "autoload": {
-        "psr-4": {"xtarantulz\\input-img-preview\\": ""}
+        "psr-4": {"xtarantulz\\preview\\": ""}
     },
 }

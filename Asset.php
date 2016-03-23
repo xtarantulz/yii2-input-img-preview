@@ -1,9 +1,13 @@
 <?php
-namespace xtarantulz\input-img-preview;
+namespace xtarantulz\preview;
+
+use yii\web\AssetBundle;
 
 class Asset extends AssetBundle
 {
-  	public $css = [];
+  	public $sourcePath = '@xtarantulz/preview/js';
+	
+	public $css = [];
    
 	public $js = [
 		'preview_image_input.js',
