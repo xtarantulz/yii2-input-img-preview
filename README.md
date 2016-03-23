@@ -1,13 +1,13 @@
 yii2-input-img-preview
-
 Yii2 ElFinder input img preview
 
 Модуль являеться разширением ElFinder Input. При использовании текстового поля для добавлении картинок выводиться превью.
 
 Использование:
+
 use mihaildev\elfinder\InputFile;
 use mihaildev\elfinder\ElFinder;
-use xtarantulz\input-img-preview\InputImgPreview
+use xtarantulz\input-img-preview\InputImgPreview;
 
 echo $form->field($model, 'images')->widget(InputFile::className(), [
     'language'      => 'ru',
