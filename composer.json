@@ -19,8 +19,7 @@
 	},
 	"autoload": {
         "psr-4": {
-            "xtarantulz\\preview\\": "",
-            "newerton\\fancybox\\": ""
+            "xtarantulz\\preview\\": ""
         }
     }
 }
