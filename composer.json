@@ -4,7 +4,6 @@
     "type": "yii2-extension",
 	"homepage": "https://github.com/xtarantulz/yii2-input-img-preview",
     "license": "BSD-3-Clause",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Batrakov Vladimir",
@@ -15,7 +14,7 @@
     ],
     "require": {
 		"mihaildev/yii2-elfinder": "*",
-        "newerton/yii2-fancybox": "@dev"
+        "newerton/yii2-fancybox": "dev-master"
 	},
 	"autoload": {
         "psr-4": {
