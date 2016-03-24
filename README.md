@@ -44,3 +44,5 @@ echo $form->field($model, 'images')->widget(InputFile::className(), [
     'multiple'      => true       // возможность выбора нескольких файлов
 ]);
 ```
+
+![screen-shot](https://github.com/xtarantulz/yii2-input-img-preview/blob/master/screen1.jpg)
