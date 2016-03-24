@@ -13,11 +13,9 @@
             "role": "Developer"
         }
     ],
-    "require-dev": {
-        "newerton/yii2-fancybox": "dev-master"
-    },
     "require": {
-		"mihaildev/yii2-elfinder": "*"
+		"mihaildev/yii2-elfinder": "*",
+        "newerton/yii2-fancybox": "dev-master"
 	},
 	"autoload": {
         "psr-4": {
