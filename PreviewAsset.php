@@ -12,7 +12,7 @@ class PreviewAsset extends AssetBundle
 	);
 	
 	public $depends = array(
-		'xtarantulz\fancybox\FancyBoxAsset',
+		'xtarantulz\preview\FancyBoxAsset',
 	);
 	
 	public function init()
