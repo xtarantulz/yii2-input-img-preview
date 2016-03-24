@@ -12,10 +12,12 @@
             "role": "Developer"
         }
     ],
-    "require": {
-		"mihaildev/yii2-elfinder": "*",
-		"newerton/yii2-fancybox": "dev-master"
+    "require-dev": {
+        "newerton/yii2-fancybox": "dev-master"
     },
+    "require": {
+		"mihaildev/yii2-elfinder": "*"
+	},
 	"autoload": {
         "psr-4": {
             "xtarantulz\\preview\\": ""
