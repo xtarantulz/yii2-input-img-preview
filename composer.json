@@ -1,6 +1,6 @@
 {
     "name": "xtarantulz/yii2-input-img-preview",
-    "description": "Розширение для yii2-elfinder и yii2-fancybox, чтобы отображать превью выбраных файлов",
+    "description": "Розширение для yii2-elfinder input, чтобы отображать превью выбраных файлов",
     "type": "yii2-extension",
 	"homepage": "https://github.com/xtarantulz/yii2-input-img-preview",
     "license": "BSD-3-Clause",
@@ -13,8 +13,6 @@
         }
     ],
     "require": {
-		"php": ">=5.4.0",
-		"yiisoft/yii2": "*",
 		"mihaildev/yii2-elfinder": "*",
 		"newerton/yii2-fancybox": "dev-master"
     },
