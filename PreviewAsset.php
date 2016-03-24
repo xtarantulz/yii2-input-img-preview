@@ -12,9 +12,7 @@ class PreviewAsset extends AssetBundle
 	);
 	
 	public $depends = array(
-		'newerton\fancybox\FancyBoxAsset',
-		'newerton\fancybox\FancyBoxHelpersAsset',
-		'newerton\fancybox\MousewheelAsset',
+		'xtarantulz\fancybox\FancyBoxAsset',
 	);
 	
 	public function init()

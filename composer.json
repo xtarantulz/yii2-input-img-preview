@@ -13,8 +13,7 @@
         }
     ],
     "require": {
-		"mihaildev/yii2-elfinder": "*",
-        "newerton/yii2-fancybox": "dev-master"
+		"mihaildev/yii2-elfinder": "*"
 	},
 	"autoload": {
         "psr-4": {
