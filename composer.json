@@ -1,25 +1,25 @@
 {
-    "name": "xtarantulz/yii2-input-img-preview",
-    "description": "Розширение для yii2-elfinder input, чтобы отображать превью выбраных файлов + fancybox",
-    "type": "yii2-extension",
-	"homepage": "https://github.com/xtarantulz/yii2-input-img-preview",
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "Batrakov Vladimir",
-            "email": "xtarantulz@mail.ru",
-			"homepage": "https://github.com/xtarantulz",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-		"mihaildev/yii2-elfinder": "*",
-        "bower-asset/fancybox": ">=2.1.5",
-        "bower-asset/jquery-mousewheel": ">=3.1.13"
-	},
-	"autoload": {
-        "psr-4": {
-            "xtarantulz\\preview\\": ""
-        }
+  "name": "xtarantulz/yii2-input-img-preview",
+  "description": "Розширение для yii2-elfinder input, чтобы отображать превью выбраных файлов + fancybox",
+  "type": "yii2-extension",
+  "homepage": "https://github.com/xtarantulz/yii2-input-img-preview",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Batrakov Vladimir",
+      "email": "xtarantulz@mail.ru",
+      "homepage": "https://github.com/xtarantulz",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "mihaildev/yii2-elfinder": "*",
+    "bower-asset/fancybox": ">=2.1.5",
+    "bower-asset/jquery-mousewheel": ">=3.1.13"
+  },
+  "autoload": {
+    "psr-4": {
+      "xtarantulz\\preview\\": ""
+    }
+  }
 }
