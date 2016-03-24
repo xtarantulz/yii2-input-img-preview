@@ -1,7 +1,7 @@
 yii2-input-img-preview
 =============
 
-The module is razšireniem ElFinder Input. If you use a text field to add pictures displayed thumbs.
+The module is expansion ElFinder Input. If you use a text field to add pictures displayed thumbs.
 
 Installation
 ------------
