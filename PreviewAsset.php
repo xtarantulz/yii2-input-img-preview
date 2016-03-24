@@ -2,7 +2,6 @@
 namespace xtarantulz\preview;
 
 use yii\web\AssetBundle;
-use yii\web\JqueryAsset;
 
 class PreviewAsset extends AssetBundle
 {

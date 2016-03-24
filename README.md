@@ -3,6 +3,10 @@ Yii2 ElFinder input img preview
 
 Модуль являеться разширением ElFinder Input. При использовании текстового поля для добавлении картинок выводиться превью.
 
+Установка:
+
+php composer.phar require --prefer-dist xtarantulz/yii2-input-img-preview "dev-master"
+
 Использование:
 
 use mihaildev\elfinder\InputFile;
