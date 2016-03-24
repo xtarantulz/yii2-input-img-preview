@@ -4,6 +4,7 @@
     "type": "yii2-extension",
 	"homepage": "https://github.com/xtarantulz/yii2-input-img-preview",
     "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Batrakov Vladimir",
