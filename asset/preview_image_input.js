@@ -17,9 +17,13 @@ function preview_reposition(images) {
     images.next().find('input').val(val);
 }
 
+var f=0;
 function show_preview(images) {
-    images.parent().parent().find('.preview').remove();
-    images.parent().before('<ul class="preview"></ul>');
+    //images.parent().parent().find('.preview').remove();
+    if(f==0) {
+        f=1;
+        images.parent().before('<ul class="preview"></ul>');
+    }
     images_array = images.val().split(', ');
     images_array.forEach(function (item, i, arr) {
         if (item.length > 0 && check_img(item)) {
@@ -27,7 +31,7 @@ function show_preview(images) {
                 "<li>" +
                     "<a class='fa fa-times delete'></a>" +
                     "<a href='" + item + "' rel='fancybox' class='preview_fancybox'>" +
-                        "<img src='" + item + "' class='preview'/>" +
+                        "<img src='" + item + "'/>" +
                     "</a>" +
                 "</li>"
             );
@@ -56,6 +60,7 @@ function show_preview(images) {
             images_val = images_val.split(',');
             images_val.splice(current, 1);
             images.val(images_val);
+            images.parent().parent().find('.preview').html('');
             show_preview(images);
         });
 
