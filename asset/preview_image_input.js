@@ -50,6 +50,7 @@ function show_preview(images) {
         });
 
         $(input).change(function () {
+            $(this).parent().parent().find('.preview').html('');
             show_preview($(this));
         });
 
