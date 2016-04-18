@@ -1,0 +1,22 @@
+ul.preview{
+    margin:0px;
+    padding:0px;
+    margin-bottom: 10px;
+}
+ul.preview li{
+    display: inline-block;
+    position:relative;
+    margin-right:10px;
+    vertical-align: middle;
+}
+
+ul.preview li a.delete {
+    font-size: 20px;
+    position: absolute;
+    right: 9px;
+    cursor: pointer;
+    top: 1px;
+}
+ul.preview li a img{
+    height:100px;
+}

@@ -5,7 +5,9 @@ use yii\web\AssetBundle;
 
 class PreviewAsset extends AssetBundle
 {
-	public $css = array();
+	public $css = array(
+		'preview_image_input.css'
+	);
 	
 	public $js = array(
 		'preview_image_input.js',
@@ -17,7 +19,7 @@ class PreviewAsset extends AssetBundle
 	
 	public function init()
 	{
-		$this->sourcePath = __DIR__."/js";
+		$this->sourcePath = __DIR__."/asset";
 		parent::init();
 	}
 }

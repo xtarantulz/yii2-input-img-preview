@@ -8,19 +8,28 @@ function check_img(value) {
     }
 }
 
+function preview_reposition(images) {
+    var val='';
+    $('li a img',images).each(function(){
+        if(val!='') val=val+', ';
+        val=val+$(this).attr('src');
+    });
+    images.next().find('input').val(val);
+}
+
 function show_preview(images) {
     images.parent().parent().find('.preview').remove();
-    images.parent().before('<div class="preview"></div>');
+    images.parent().before('<ul class="preview"></ul>');
     images_array = images.val().split(', ');
     images_array.forEach(function (item, i, arr) {
         if (item.length > 0 && check_img(item)) {
             images.parent().prev().append(
-                "<div style='position:relative; display:inline-block;'>" +
-                    "<a class='fa fa-times delete' style='font-size: 20px; position: absolute; right: 9px; cursor:pointer; top:1px;'></a>" +
+                "<li>" +
+                    "<a class='fa fa-times delete'></a>" +
                     "<a href='" + item + "' rel='fancybox' class='preview_fancybox'>" +
-                        "<img src='" + item + "' class='preview' style='height:100px; margin-right:10px; margin-top:5px; margin-bottom:10px;'/>" +
+                        "<img src='" + item + "' class='preview'/>" +
                     "</a>" +
-                "</div>"
+                "</li>"
             );
         }
     });
@@ -78,4 +87,10 @@ function show_preview(images) {
             },
         });
     }
+
+    $(".preview").sortable({
+        update: function( event, ui ) {
+            preview_reposition($(this));
+        }
+    });
 })(jQuery);

@@ -8,6 +8,7 @@ class FancyBoxAsset extends AssetBundle
     public $sourcePath = '@bower';
 
     public $js = [
+        'jquery-ui/jquery-ui.js',
         'jquery-mousewheel/jquery.mousewheel.js',
         'fancybox/source/jquery.fancybox.js',
         'fancybox/source/helpers/jquery.fancybox-buttons.js',
