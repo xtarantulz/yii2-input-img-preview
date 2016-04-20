@@ -17,13 +17,11 @@ function preview_reposition(images) {
     images.next().find('input').val(val);
 }
 
-var f=0;
 function show_preview(images) {
-    //images.parent().parent().find('.preview').remove();
-    if(f==0) {
-        f=1;
+    if(!(images.parent().prev().hasClass('preview'))){
         images.parent().before('<ul class="preview"></ul>');
     }
+
     images_array = images.val().split(', ');
     images_array.forEach(function (item, i, arr) {
         if (item.length > 0 && check_img(item)) {
