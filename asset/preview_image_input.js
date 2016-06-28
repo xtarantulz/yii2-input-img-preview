@@ -1,7 +1,7 @@
 //сделаем превиев картинок что загружаються в новостях
 
 function check_img(value) {
-    if ((value.indexOf('.png') + 1) || (value.indexOf('.jpg') + 1) || (value.indexOf('.jpeg') + 1) || (value.indexOf('.bmp') + 1) || (value.indexOf('.gif') + 1)) {
+    if((value.indexOf('.png') + 1) || (value.indexOf('.jpg') + 1) || (value.indexOf('.jpeg') + 1) || (value.indexOf('.bmp') + 1) || (value.indexOf('.gif') + 1)) {
         return true;
     } else {
         return false;
@@ -14,16 +14,10 @@ function preview_reposition(images) {
         if(val!='') val=val+', ';
         val=val+$(this).attr('src');
     });
-    images.next().find('input').val(val);
+    images.next().find('input.img').val(val);
 }
 
-var f=0;
 function show_preview(images) {
-    //images.parent().parent().find('.preview').remove();
-    if(f==0) {
-        f=1;
-        images.parent().before('<ul class="preview"></ul>');
-    }
     images_array = images.val().split(', ');
     images_array.forEach(function (item, i, arr) {
         if (item.length > 0 && check_img(item)) {
@@ -40,13 +34,11 @@ function show_preview(images) {
 }
 
 (function ($) {
-    var input = 'input.form-control[type="text"]';
+    var input = 'input.form-control.img[type="text"]';
     if ($(input).is(input)) {
         $(input).each(function () {
-            var value = $(this).val();
-            if (check_img(value)) {
-                show_preview($(this));
-            }
+            $(this).parent().before('<ul class="preview"></ul>');
+            show_preview($(this));
         });
 
         $(input).change(function () {
