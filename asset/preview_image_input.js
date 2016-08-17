@@ -56,35 +56,35 @@ function show_preview(images) {
             images.parent().parent().find('.preview').html('');
             show_preview(images);
         });
-
-        $('a.preview_fancybox[rel=fancybox]').fancybox({
-            'maxWidth': '90%',
-            'maxHeight': '90%',
-            'playSpeed': 7000,
-            'padding': 0,
-            'fitToView': false,
-            'width': '100%',
-            'height': '100%',
-            'autoSize': true,
-            'closeClick': false,
-            'openEffect': 'elastic',
-            'closeEffect': 'elastic',
-            'prevEffect': 'elastic',
-            'nextEffect': 'elastic',
-            'closeBtn': false,
-            'openOpacity': true,
-            'helpers': {
-                'title': {'type': 'float'},
-                'buttons': {},
-                'thumbs': {'width': 100, 'height': 100},
-                'overlay': {
-                    'css': {
-                        'background': 'rgba(0, 0, 0, 0.8)'
-                    }
-                }
-            },
-        });
     }
+
+    $('a.preview_fancybox[rel=fancybox]').fancybox({
+        'maxWidth': '90%',
+        'maxHeight': '90%',
+        'playSpeed': 7000,
+        'padding': 0,
+        'fitToView': false,
+        'width': '100%',
+        'height': '100%',
+        'autoSize': true,
+        'closeClick': false,
+        'openEffect': 'elastic',
+        'closeEffect': 'elastic',
+        'prevEffect': 'elastic',
+        'nextEffect': 'elastic',
+        'closeBtn': false,
+        'openOpacity': true,
+        'helpers': {
+            'title': {'type': 'float'},
+            'buttons': {},
+            'thumbs': {'width': 100, 'height': 100},
+            'overlay': {
+                'css': {
+                    'background': 'rgba(0, 0, 0, 0.8)'
+                }
+            }
+        },
+    });
 
     $(".preview").sortable({
         update: function( event, ui ) {
