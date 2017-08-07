@@ -1,6 +1,8 @@
 //сделаем превиев картинок что загружаються в новостях
 
 function check_img(value) {
+    value = value.toUpperCase();
+
     if((value.indexOf('.png') + 1) || (value.indexOf('.jpg') + 1) || (value.indexOf('.jpeg') + 1) || (value.indexOf('.bmp') + 1) || (value.indexOf('.gif') + 1)) {
         return true;
     } else {
