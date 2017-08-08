@@ -3,8 +3,6 @@
 function check_img(value) {
     value = value.toLowerCase();
 
-    alert(1);
-
     if((value.indexOf('.png') + 1) || (value.indexOf('.jpg') + 1) || (value.indexOf('.jpeg') + 1) || (value.indexOf('.bmp') + 1) || (value.indexOf('.gif') + 1)) {
         return true;
     } else {
